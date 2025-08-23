@@ -1,0 +1,12 @@
+html,body{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#store_btn{
+    padding: 5px 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    color: green;
+}

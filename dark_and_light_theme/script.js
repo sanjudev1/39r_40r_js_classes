@@ -8,7 +8,6 @@ function changeTheme(){
         container.classList="" 
         localStorage.removeItem("key_theme")
     }else{
-
         localStorage.setItem("key_theme","theme")
         container.classList="theme"
     }
