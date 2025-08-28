@@ -1,0 +1,32 @@
+.img{
+    width:300px
+}
+#users_data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    background-color: white;
+    box-shadow: 0cm;
+    border-radius: 5px;
+    border: solid 1px blue;
+    margin: 2px;
+}
+
+html,body{
+    text-align: center;
+    justify-content: center;
+}
+.adduser{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    margin-left: 30%;
+}
+.input{
+    padding: 10px;
+}

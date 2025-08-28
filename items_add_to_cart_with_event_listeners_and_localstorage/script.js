@@ -16,4 +16,3 @@ let store_btn_ele=document.getElementById("store_btn")
 // store_btn_ele.onclick=AddyourItems
 
 inputele.addEventListener("keyup",AddyourItems)
-

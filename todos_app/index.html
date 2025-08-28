@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="adduser">
+<input type="text" id="name" class="input" placeholder="Your Name"/>
+    <input type="email" id="email" class="input" placeholder="Your Email"/>
+    <select id="gender" class="input">
+        <option>male</option>
+        <option>female</option>
+    </select>
+      <select id="status" class="input">
+        <option>active</option>
+        <option>in active</option>
+    </select>
+    <button onclick="AddUser()">add new User</button>
+    </div>
+    
+    <h1>Get all users</h1>
+    
+    <div id="users_data"></div>
+    <script src="script.js"></script>
+</body>
+</html>
