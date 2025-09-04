@@ -2,7 +2,7 @@
 let user_container=document.getElementById("users_data")
 function fetchallusers(){
     fetch("https://gorest.co.in/public/v2/users",
-      {  method:"GET",
+      {  
         headers:{
         
             Authorization:"Bearer 766e34c462deab3c81680017006289c59bd61183968dc098f2969594b52a4bd0"
@@ -19,7 +19,7 @@ function fetchallusers(){
           let card=document.createElement("div")
           card.classList="card"
           card.innerHTML=
-          `<p> ${jsondata[i].id}</p>
+          `<p> ${jsondata[i].id} <button class="delete_icon" onclick="deleteUser('${jsondata[i].id}')">✕</></button>
           <p>${jsondata[i].name}</p>
           <p>${jsondata[i].email}</p>
            <p>${jsondata[i].gender}</p>
@@ -59,4 +59,24 @@ function AddUser(){
         fetchallusers()
        
     })
+}
+
+
+function deleteUser(user_id){
+  console.log(user_id)
+  fetch(`https://gorest.co.in/public/v2/users/${user_id}`,{
+    method:"DELETE",
+    headers:{
+        Authorization:"Bearer 766e34c462deab3c81680017006289c59bd61183968dc098f2969594b52a4bd0"
+    }
+  })
+  .then(function(response){
+      return response.status
+  })
+  .then(function(status){
+    if(status==204){
+
+        fetchallusers()
+    }
+  })
 }

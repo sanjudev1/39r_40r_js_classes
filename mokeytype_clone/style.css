@@ -1,0 +1,13 @@
+.heading{
+    text-align: center;
+}
+#sentence{
+    font-size: x-large;
+}
+
+html,body{
+    background-color: #323437;
+}
+#user_input{
+    width:0px;
+}

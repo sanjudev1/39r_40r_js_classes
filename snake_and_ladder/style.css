@@ -1,0 +1,16 @@
+html,body{
+    text-align: center;
+}
+.cell{
+    width: 30px;
+    padding: 8px;
+    border: solid 1px blue;
+}
+#cell_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.person{
+    padding:7px;
+    border-radius: 50%;
+}

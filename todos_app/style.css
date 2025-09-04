@@ -30,3 +30,9 @@ html,body{
 .input{
     padding: 10px;
 }
+.delete_icon{
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 3px;
+    border : solid 1px red;
+}
