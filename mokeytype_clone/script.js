@@ -5,9 +5,14 @@ cur_sen=cur_sen.split("").map(each_ch=>`<span>${each_ch}</span>`).join("")
 sentence_ele.innerHTML=cur_sen
 let all_ch_elements=document.querySelectorAll("span")
 document.body.addEventListener("keyup",function(e){
+    console.log(e.key)
+
     if(e.key=="Backspace"){
         user_input_ele.value=user_input_ele.value.substring(0,user_input_ele.value.length-1)
-    }else{
+    }else if(e.key=="CapsLock" || e.key=="Tab" || e.key=="Shift"|| e.key=="Control"){
+        pass
+    }
+    else{
 
         user_input_ele.value=user_input_ele.value+e.key
     }
